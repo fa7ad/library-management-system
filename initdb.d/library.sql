@@ -62,8 +62,8 @@ INSERT INTO
 VALUES
   (
     1,
-    'Anuj Kumar',
-    'phpgurukulofficial@gmail.com',
+    'Fahad Hossain',
+    'setnamefahad@gmail.com',
     'admin',
     'f925916e2754e5e03f75dd58a5733251',
     '2019-07-16 18:11:42'

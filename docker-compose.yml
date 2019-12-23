@@ -1,4 +1,4 @@
-version: "2"
+version: "3"
 
 services:
   php:
@@ -12,14 +12,14 @@ services:
     image: yobasystems/alpine-mariadb
     environment:
       MYSQL_ROOT_PASSWORD: s..i..m..p..l..e
-      MYSQL_DATABASE: lmsdb
+      MYSQL_DATABASE: library
       MYSQL_USER: lms
       MYSQL_PASSWORD: lmspwd
     expose:
       - "3306"
     volumes:
       - ./data/mysql:/var/lib/mysql
-      - ./db-init:/opt
+      - ./initdb.d:/docker-entrypoint-initdb.d
     restart: always
     networks:
       - lib-man-net

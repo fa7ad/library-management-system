@@ -1,0 +1,57 @@
+version: "2"
+
+services:
+  php:
+    build:
+      context: ./app
+    volumes:
+      - ./app/src:/src
+    networks:
+      - lib-man-net
+  mysql:
+    image: yobasystems/alpine-mariadb
+    environment:
+      MYSQL_ROOT_PASSWORD: s..i..m..p..l..e
+      MYSQL_DATABASE: lmsdb
+      MYSQL_USER: lms
+      MYSQL_PASSWORD: lmspwd
+    expose:
+      - "3306"
+    volumes:
+      - ./data/mysql:/var/lib/mysql
+      - ./db-init:/opt
+    restart: always
+    networks:
+      - lib-man-net
+  pma:
+    image: phpmyadmin/phpmyadmin:fpm-alpine
+    environment:
+      MYSQL_ROOT_PASSWORD: s..i..m..p..l..e
+      PMA_HOST: mysql
+    volumes:
+      - phpmyadmin_data:/var/www/html/
+    networks:
+      - lib-man-net
+    depends_on:
+      - mysql
+  web:
+    image: nginx:alpine
+    ports:
+      - "8080:80"
+      - "8181:88"
+    volumes:
+      - ./app/src:/src
+      - ./conf.d/default.conf:/etc/nginx/conf.d/default.conf
+      - phpmyadmin_data:/var/www/html/:ro
+    networks:
+      - lib-man-net
+    depends_on:
+      - mysql
+      - pma
+
+networks:
+  lib-man-net:
+    driver: bridge
+
+volumes:
+  phpmyadmin_data:

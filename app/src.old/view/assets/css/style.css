@@ -1,0 +1,320 @@
+/* YOUR CUSTOM STYLES */
+html,
+body,main {
+    height: 100%;
+}
+/* Navigation*/
+
+.navbar {
+    background-color: #16456C;
+}
+
+.top-nav-collapse {
+    background-color: #16456C;
+}
+
+footer.page-footer {
+    background-color: #16456C;
+}
+.navbar a{
+    color: #ffffff;
+}
+.navbar a:hover{
+    color: #16456C;
+}
+.navbar a:active{
+    color: #16456C;
+}
+.navbar a:focus{
+    color: #16456C;
+}
+@media only screen and (max-width: 768px) {
+    .navbar {
+        background-color: #16456C;
+    }
+}
+
+.main-content{
+    margin-top: 50px;
+}
+
+/*
+login Section*/
+.login-logo{
+    margin: 70px;
+    text-align: center;
+}
+.login-logo img{
+    width: 100px;
+}
+
+.form-content{
+    background: #ffffff;
+    max-width: 420px;
+    width: 100%;
+    border-top: 5px solid #16456c;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+    margin: 50px auto;
+
+}
+.login-form {
+    padding: 40px;
+    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+    -moz-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+    box-shadow: 0 1px 2px rgba(0,0,0,.05);
+
+}
+.login-form h2 {
+    margin: 0 0 20px;
+    color: #16456c;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1;
+    text-align: center;
+}
+.login-form input {
+    outline: none;
+    display: block;
+    width: 100%;
+    height: 42px;
+    border: 1px solid #16456c;
+    margin: 20px 0 0px 0;
+    padding: 0 20px 0 50px;
+    box-sizing: border-box;
+    font-wieght: 400;
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+}
+.login-form input#username {
+    background: #fff url('user.png') 20px no-repeat;
+    background-size: 16px 16px;
+    color: #16456c;
+}
+
+.login-form input#username:focus {
+    background: #fff url('user.png') 20px no-repeat;
+    background-size: 14px 14px;
+    color: #16456c;
+}
+
+.login-form input#password {
+    background: #fff url('locked.png') 20px no-repeat;
+    background-size: 16px 16px;
+    color: #16456c;
+}
+
+.login-form input#password:focus {
+    background: #fff url('locked.png') 20px no-repeat;
+    background-size: 14px 14px;
+    color: #16456c;
+}
+.login-form input#current_password{
+    background: #fff url('locked.png') 20px no-repeat;
+    background-size: 16px 16px;
+    color: #16456c;
+}
+
+.login-form input#current_password:focus {
+    background: #fff url('locked.png') 20px no-repeat;
+    background-size: 14px 14px;
+    color: #16456c;
+}
+.login-form input#new_password{
+    background: #fff url('locked.png') 20px no-repeat;
+    background-size: 16px 16px;
+    color: #16456c;
+}
+
+.login-form input#new_password:focus {
+    background: #fff url('locked.png') 20px no-repeat;
+    background-size: 14px 14px;
+    color: #16456c;
+}
+.login-form input#new_password_again {
+    background: #fff url('locked.png') 20px no-repeat;
+    background-size: 16px 16px;
+    color: #16456c;
+}
+
+.login-form input#new_password_again:focus {
+    background: #fff url('locked.png') 20px no-repeat;
+    background-size: 14px 14px;
+    color: #16456c;
+}
+.login-form input#email {
+    background: #fff url('mail.png') 20px no-repeat;
+    background-size: 16px 16px;
+    color: #16456c;
+}
+
+.login-form input#email:focus {
+    background: #fff url('mail.png') 20px no-repeat;
+    background-size: 14px 14px;
+    color: #16456c;
+}
+.login-form input:focus {
+    border: 1px solid #16456c;
+    color: #16456c;
+}
+.login-form label{
+    color: red;
+}
+.errorDiv{
+    padding: 10px;
+}
+.login-form button {
+    cursor: pointer;
+    background: #16456c;
+    width: 100%;
+    border: 0;
+    margin-top: 20px;
+    padding: 10px 15px;
+    color: #ffffff;
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+}
+.login-form button:hover {
+    background: #0d293f;
+}
+.login-form .cta {
+    background: #f2f2f2;
+    width: 100%;
+    padding: 15px 40px;
+    box-sizing: border-box;
+    color: #666666;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.login-form .cta a {
+    color: #16456c;
+    text-decoration: none;
+}
+.login-form p.errors{
+    text-align: center;
+    color: red;
+}
+
+@media screen and (max-width: 768px) {
+    body{
+        padding: 10px;
+    }
+}
+
+/*  View Profile*/
+.profile .profile-info{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 0 10px;
+}
+.profile .profile-info .profile-pic{
+    text-align: center;
+}
+.profile .profile-info .profile-pic img{
+    height: 200px !important;
+    width: 200px !important;
+}
+.profile .profile-info .information button{
+    background-color:#16456c;
+    color:white;
+    width: 100%;
+}
+.profile .history-info{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 0 10px;
+}
+.profile .table thead{
+    background-color: #16456c;
+    color: #FFFFFF;
+}
+.panel-custom{
+    border-color: #16456c;
+}
+.panel-custom > .panel-heading{
+    background-color: #16456c;
+    color: #FFFFFF;
+}
+.main-heading{
+    margin-top: 50px;
+    padding: 10px;
+    text-align: center;
+}
+.main-heading h2{
+}
+
+.profile .profile-info #selectImage input[type=file]{
+    margin: 10px 0;
+    width:100%;
+}
+
+/*
+Image setting*/
+#image_upload_form{
+    text-align: center;
+}
+#imgArea {
+    display: inline-block;
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    background-color: #eee;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+#imgArea img {
+    outline: medium none;
+    vertical-align: middle;
+    width: 100%;
+    height: 100%;
+}
+#imgChange {
+    background: rgba(22, 69, 108,0.7);
+    bottom: 0;
+    color: #FFFFFF;
+    display: block;
+    height: 30px;
+    left: 0;
+    line-height: 32px;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+}
+#imgChange input[type="file"] {
+    bottom: 0;
+    cursor: pointer;
+    height: 100%;
+    left: 0;
+    margin: 0;
+    opacity: 0;
+    padding: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 0;
+}
+/* Progressbar */
+.progressBar {
+    background: none repeat scroll 0 0 #E0E0E0;
+    left: 0;
+    padding: 3px 0;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: none;
+}
+.progressBar .bar {
+    background-color: #FF6C67;
+    width: 0%;
+    height: 14px;
+}
+.progressBar .percent {
+    display: inline-block;
+    left: 0;
+    position: absolute;
+    text-align: center;
+    top: 2px;
+    width: 100%;
+}

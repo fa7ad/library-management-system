@@ -13,7 +13,7 @@ Dockerized LEMP-stack based Library Management System
 
 **User Mode:**  
 Email: test@gmail.com
-Paassword: Test@123
+Password: Test@123
 
 **Admin Mode:**  
 Username: admin

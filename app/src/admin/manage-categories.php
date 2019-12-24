@@ -13,11 +13,9 @@ if (strlen($_SESSION['alogin']) == 0) {
     $_SESSION['delmsg'] = "Category deleted scuccessfully ";
     header('location:manage-categories.php');
 }
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
@@ -34,9 +32,7 @@ if (strlen($_SESSION['alogin']) == 0) {
     <link href="assets/css/style.css" rel="stylesheet" />
     <!-- GOOGLE FONT -->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
-
 </head>
-
 <body>
     <!------MENU SECTION START-->
     <?php include('includes/header.php'); ?>
@@ -75,8 +71,6 @@ if (strlen($_SESSION['alogin']) == 0) {
                             </div>
                         </div>
                     <?php } ?>
-
-
                     <?php if ($_SESSION['delmsg'] != "") { ?>
                         <div class="col-md-6">
                             <div class="alert alert-success">
@@ -86,10 +80,7 @@ if (strlen($_SESSION['alogin']) == 0) {
                             </div>
                         </div>
                     <?php } ?>
-
                 </div>
-
-
             </div>
             <div class="row">
                 <div class="col-md-12">
@@ -130,7 +121,6 @@ if (strlen($_SESSION['alogin']) == 0) {
                                                     <td class="center"><?php echo htmlentities($result->CreationDate); ?></td>
                                                     <td class="center"><?php echo htmlentities($result->UpdationDate); ?></td>
                                                     <td class="center">
-
                                                         <a href="edit-category.php?catid=<?php echo htmlentities($result->id); ?>"><button class="btn btn-primary"><i class="fa fa-edit "></i> Edit</button>
                                                             <a href="manage-categories.php?del=<?php echo htmlentities($result->id); ?>" onclick="return confirm('Are you sure you want to delete?');"" >  <button class=" btn btn-danger"><i class="fa fa-pencil"></i> Delete</button>
                                                     </td>
@@ -141,18 +131,13 @@ if (strlen($_SESSION['alogin']) == 0) {
                                     </tbody>
                                 </table>
                             </div>
-
                         </div>
                     </div>
                     <!--End Advanced Tables -->
                 </div>
             </div>
-
-
-
         </div>
     </div>
-
     <!-- CONTENT-WRAPPER SECTION END-->
     <?php include('includes/footer.php'); ?>
     <!-- FOOTER SECTION END-->
@@ -167,5 +152,4 @@ if (strlen($_SESSION['alogin']) == 0) {
     <!-- CUSTOM SCRIPTS  -->
     <script src="assets/js/custom.js"></script>
 </body>
-
 </html>

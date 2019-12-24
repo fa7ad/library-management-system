@@ -6,7 +6,6 @@ if ($_SESSION['login'] != '') {
   $_SESSION['login'] = '';
 }
 if (isset($_POST['login'])) {
-
   $email = $_POST['emailid'];
   $password = md5($_POST['password']);
   $sql = "SELECT EmailId,Password,StudentId,Status FROM tblstudents WHERE EmailId=:email and Password=:password";
@@ -15,7 +14,6 @@ if (isset($_POST['login'])) {
   $query->bindParam(':password', $password, PDO::PARAM_STR);
   $query->execute();
   $results = $query->fetchAll(PDO::FETCH_OBJ);
-
   if ($query->rowCount() > 0) {
     foreach ($results as $result) {
       $_SESSION['stdid'] = $result->StudentId;
@@ -48,7 +46,6 @@ if (isset($_POST['login'])) {
   <link href="assets/css/style.css" rel="stylesheet" />
   <!-- GOOGLE FONT -->
   <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
-
 </head>
 
 <body>
@@ -74,7 +71,6 @@ if (isset($_POST['login'])) {
                   <label>Password</label>
                   <input class="form-control" type="password" name="password" required autocomplete="off" />
                 </div>
-
                 <button type="submit" name="login" class="btn btn-info">LOGIN </button> | <a href="signup.php">Not Register Yet?</a>
               </form>
             </div>
@@ -82,8 +78,6 @@ if (isset($_POST['login'])) {
         </div>
       </div>
       <!---LOGIN PABNEL END-->
-
-
     </div>
   </div>
   <!-- CONTENT-WRAPPER SECTION END-->
@@ -94,7 +88,6 @@ if (isset($_POST['login'])) {
   <script src="assets/js/bootstrap.js"></script>
   <!-- CUSTOM SCRIPTS  -->
   <script src="assets/js/custom.js"></script>
-
 </body>
 
 </html>

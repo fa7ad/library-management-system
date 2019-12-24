@@ -8,7 +8,6 @@ if (strlen($_SESSION['alogin']) == 0) {
 ?>
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
@@ -23,9 +22,7 @@ if (strlen($_SESSION['alogin']) == 0) {
   <link href="assets/css/style.css" rel="stylesheet" />
   <!-- GOOGLE FONT -->
   <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
-
 </head>
-
 <body>
   <!------MENU SECTION START-->
   <?php include('includes/header.php'); ?>
@@ -35,13 +32,9 @@ if (strlen($_SESSION['alogin']) == 0) {
       <div class="row pad-botm">
         <div class="col-md-12">
           <h4 class="header-line">ADMIN DASHBOARD</h4>
-
         </div>
-
       </div>
-
       <div class="row">
-
         <div class="col-md-3 col-sm-3 col-xs-6">
           <div class="alert alert-success back-widget-set text-center">
             <i class="fa fa-book fa-5x"></i>
@@ -52,14 +45,10 @@ if (strlen($_SESSION['alogin']) == 0) {
             $results = $query->fetchAll(PDO::FETCH_OBJ);
             $listdbooks = $query->rowCount();
             ?>
-
-
             <h3><?php echo htmlentities($listdbooks); ?></h3>
             Books Listed
           </div>
         </div>
-
-
         <div class="col-md-3 col-sm-3 col-xs-6">
           <div class="alert alert-info back-widget-set text-center">
             <i class="fa fa-bars fa-5x"></i>
@@ -70,12 +59,10 @@ if (strlen($_SESSION['alogin']) == 0) {
             $results1 = $query1->fetchAll(PDO::FETCH_OBJ);
             $issuedbooks = $query1->rowCount();
             ?>
-
             <h3><?php echo htmlentities($issuedbooks); ?> </h3>
             Times Book Issued
           </div>
         </div>
-
         <div class="col-md-3 col-sm-3 col-xs-6">
           <div class="alert alert-warning back-widget-set text-center">
             <i class="fa fa-recycle fa-5x"></i>
@@ -88,7 +75,6 @@ if (strlen($_SESSION['alogin']) == 0) {
             $results2 = $query2->fetchAll(PDO::FETCH_OBJ);
             $returnedbooks = $query2->rowCount();
             ?>
-
             <h3><?php echo htmlentities($returnedbooks); ?></h3>
             Times Books Returned
           </div>
@@ -107,13 +93,8 @@ if (strlen($_SESSION['alogin']) == 0) {
             Registered Users
           </div>
         </div>
-
       </div>
-
-
-
       <div class="row">
-
         <div class="col-md-3 col-sm-3 col-xs-6">
           <div class="alert alert-success back-widget-set text-center">
             <i class="fa fa-user fa-5x"></i>
@@ -124,14 +105,10 @@ if (strlen($_SESSION['alogin']) == 0) {
             $results4 = $query4->fetchAll(PDO::FETCH_OBJ);
             $listdathrs = $query4->rowCount();
             ?>
-
-
             <h3><?php echo htmlentities($listdathrs); ?></h3>
             Authors Listed
           </div>
         </div>
-
-
         <div class="col-md-3 col-sm-3 rscol-xs-6">
           <div class="alert alert-info back-widget-set text-center">
             <i class="fa fa-file-archive-o fa-5x"></i>
@@ -142,53 +119,23 @@ if (strlen($_SESSION['alogin']) == 0) {
             $results5 = $query5->fetchAll(PDO::FETCH_OBJ);
             $listdcats = $query5->rowCount();
             ?>
-
             <h3><?php echo htmlentities($listdcats); ?> </h3>
             Listed Categories
           </div>
         </div>
-
-
       </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
       <div class="row">
-
         <div class="col-md-10 col-sm-8 col-xs-12 col-md-offset-1">
           <div id="carousel-example" class="carousel slide slide-bdr" data-ride="carousel">
-
             <div class="carousel-inner">
               <div class="item active">
-
                 <img src="assets/img/1.jpg" alt="" />
-
               </div>
               <div class="item">
                 <img src="assets/img/2.jpg" alt="" />
-
               </div>
               <div class="item">
                 <img src="assets/img/3.jpg" alt="" />
-
               </div>
             </div>
             <!--INDICATORS-->
@@ -206,13 +153,7 @@ if (strlen($_SESSION['alogin']) == 0) {
             </a>
           </div>
         </div>
-
-
-
-
-
       </div>
-
     </div>
   </div>
   <!-- CONTENT-WRAPPER SECTION END-->
@@ -226,5 +167,4 @@ if (strlen($_SESSION['alogin']) == 0) {
   <!-- CUSTOM SCRIPTS  -->
   <script src="assets/js/custom.js"></script>
 </body>
-
 </html>

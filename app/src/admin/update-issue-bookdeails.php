@@ -5,7 +5,6 @@ include('includes/config.php');
 if (strlen($_SESSION['alogin']) == 0) {
     header('location:index.php');
 } else {
-
     if (isset($_POST['return'])) {
         $rid = intval($_GET['rid']);
         $fine = $_POST['fine'];
@@ -16,7 +15,6 @@ if (strlen($_SESSION['alogin']) == 0) {
         $query->bindParam(':fine', $fine, PDO::PARAM_STR);
         $query->bindParam(':rstatus', $rstatus, PDO::PARAM_STR);
         $query->execute();
-
         $_SESSION['msg'] = "Book Returned successfully";
         header('location:manage-issued-books.php');
     }
@@ -54,7 +52,6 @@ if (strlen($_SESSION['alogin']) == 0) {
                 error: function() {}
             });
         }
-
         //function for book details
         function getbook() {
             $("#loaderIcon").show();
@@ -75,8 +72,6 @@ if (strlen($_SESSION['alogin']) == 0) {
             color: red;
         }
     </style>
-
-
 </head>
 
 <body>
@@ -88,9 +83,7 @@ if (strlen($_SESSION['alogin']) == 0) {
             <div class="row pad-botm">
                 <div class="col-md-12">
                     <h4 class="header-line">Issued Book Details</h4>
-
                 </div>
-
             </div>
             <div class="row">
                 <div class="col-md-10 col-sm-6 col-xs-12 col-md-offset-1">
@@ -110,71 +103,52 @@ if (strlen($_SESSION['alogin']) == 0) {
                                 $cnt = 1;
                                 if ($query->rowCount() > 0) {
                                     foreach ($results as $result) {               ?>
-
-
-
-
                                         <div class="form-group">
                                             <label>Student Name :</label>
                                             <?php echo htmlentities($result->FullName); ?>
                                         </div>
-
                                         <div class="form-group">
                                             <label>Book Name :</label>
                                             <?php echo htmlentities($result->BookName); ?>
                                         </div>
-
-
                                         <div class="form-group">
                                             <label>ISBN :</label>
                                             <?php echo htmlentities($result->ISBNNumber); ?>
                                         </div>
-
                                         <div class="form-group">
                                             <label>Book Issued Date :</label>
                                             <?php echo htmlentities($result->IssuesDate); ?>
                                         </div>
-
-
                                         <div class="form-group">
                                             <label>Book Returned Date :</label>
                                             <?php if ($result->ReturnDate == "") {
                                                 echo htmlentities("Not Return Yet");
                                             } else {
-
-
                                                 echo htmlentities($result->ReturnDate);
                                             }
                                             ?>
                                         </div>
-
                                         <div class="form-group">
                                             <label>Fine (in USD) :</label>
                                             <?php
                                             if ($result->fine == "") { ?>
                                                 <input class="form-control" type="text" name="fine" id="fine" required />
-
                                             <?php } else {
                                                 echo htmlentities($result->fine);
                                             }
                                             ?>
                                         </div>
                                         <?php if ($result->RetrunStatus == 0) { ?>
-
                                             <button type="submit" name="return" id="submit" class="btn btn-info">Return Book </button>
-
                         </div>
-
-            <?php }
-                                    }
-                                } ?>
+                    <?php } ?>
+                <?php } ?>
+            <?php } ?>
             </form>
                     </div>
                 </div>
             </div>
-
         </div>
-
     </div>
     </div>
     <!-- CONTENT-WRAPPER SECTION END-->
@@ -187,7 +161,6 @@ if (strlen($_SESSION['alogin']) == 0) {
     <script src="assets/js/bootstrap.js"></script>
     <!-- CUSTOM SCRIPTS  -->
     <script src="assets/js/custom.js"></script>
-
 </body>
 
 </html>

@@ -24,7 +24,6 @@ if (strlen($_SESSION['alogin']) == 0) {
 ?>
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
@@ -54,7 +53,6 @@ if (strlen($_SESSION['alogin']) == 0) {
                 error: function() {}
             });
         }
-
         //function for book details
         function getbook() {
             $("#loaderIcon").show();
@@ -75,10 +73,7 @@ if (strlen($_SESSION['alogin']) == 0) {
             color: red;
         }
     </style>
-
-
 </head>
-
 <body>
     <!------MENU SECTION START-->
     <?php include('includes/header.php'); ?>
@@ -88,9 +83,7 @@ if (strlen($_SESSION['alogin']) == 0) {
             <div class="row pad-botm">
                 <div class="col-md-12">
                     <h4 class="header-line">Issue a New Book</h4>
-
                 </div>
-
             </div>
             <div class="row">
                 <div class="col-md-10 col-sm-6 col-xs-12 col-md-offset-1">
@@ -100,40 +93,27 @@ if (strlen($_SESSION['alogin']) == 0) {
                         </div>
                         <div class="panel-body">
                             <form role="form" method="post">
-
                                 <div class="form-group">
                                     <label>Srtudent id<span style="color:red;">*</span></label>
                                     <input class="form-control" type="text" name="studentid" id="studentid" onBlur="getstudent()" autocomplete="off" required />
                                 </div>
-
                                 <div class="form-group">
                                     <span id="get_student_name" style="font-size:16px;"></span>
                                 </div>
-
-
-
-
-
                                 <div class="form-group">
                                     <label>ISBN Number or Book Title<span style="color:red;">*</span></label>
                                     <input class="form-control" type="text" name="booikid" id="bookid" onBlur="getbook()" required="required" />
                                 </div>
-
                                 <div class="form-group">
-
                                     <select class="form-control" name="bookdetails" id="get_book_name" readonly>
-
                                     </select>
                                 </div>
                                 <button type="submit" name="issue" id="submit" class="btn btn-info">Issue Book </button>
-
                             </form>
                         </div>
                     </div>
                 </div>
-
             </div>
-
         </div>
     </div>
     <!-- CONTENT-WRAPPER SECTION END-->
@@ -146,7 +126,5 @@ if (strlen($_SESSION['alogin']) == 0) {
     <script src="assets/js/bootstrap.js"></script>
     <!-- CUSTOM SCRIPTS  -->
     <script src="assets/js/custom.js"></script>
-
 </body>
-
 </html>

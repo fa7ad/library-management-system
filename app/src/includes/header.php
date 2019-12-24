@@ -9,7 +9,6 @@
             <a href='/' class="navbar-brand">
                 Library Management System
             </a>
-
         </div>
         <div class="navbar-collapse collapse ">
             <?php if ($_SESSION['login']) { ?>
@@ -23,7 +22,7 @@
                         </ul>
                     </li>
                     <li><a href="issued-books.php">Issued Books</a></li>
-                    <li><a href="logout.php" class="btn btn-danger pull-right">LOG ME OUT</a></li>
+                    <li><a href="logout.php" class="text-danger pull-right">LOG ME OUT</a></li>
                 </ul>
             <?php } else { ?>
                 <ul class="nav navbar-nav navbar-right">

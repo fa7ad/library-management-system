@@ -21,11 +21,7 @@
       $("#dataTables-example").dataTable();
     },
 
-    custom_fun: function() {
-      /*====================================
-             WRITE YOUR   SCRIPTS  BELOW
-            ======================================*/
-    }
+    custom_fun: function() {}
   };
 
   $(document).ready(function() {

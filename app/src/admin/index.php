@@ -20,7 +20,6 @@ if (isset($_POST['login'])) {
 ?>
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
@@ -35,9 +34,7 @@ if (isset($_POST['login'])) {
     <link href="assets/css/style.css" rel="stylesheet" />
     <!-- GOOGLE FONT -->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
-
 </head>
-
 <body>
     <!------MENU SECTION START-->
     <?php include('includes/header.php'); ?>
@@ -49,7 +46,6 @@ if (isset($_POST['login'])) {
                     <h4 class="header-line">ADMIN LOGIN FORM</h4>
                 </div>
             </div>
-
             <!--LOGIN PANEL START-->
             <div class="row">
                 <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
@@ -59,7 +55,6 @@ if (isset($_POST['login'])) {
                         </div>
                         <div class="panel-body">
                             <form role="form" method="post">
-
                                 <div class="form-group">
                                     <label>Enter Username</label>
                                     <input class="form-control" type="text" name="username" required />
@@ -75,8 +70,6 @@ if (isset($_POST['login'])) {
                 </div>
             </div>
             <!---LOGIN PABNEL END-->
-
-
         </div>
     </div>
     <!-- CONTENT-WRAPPER SECTION END-->
@@ -88,5 +81,4 @@ if (isset($_POST['login'])) {
     <!-- CUSTOM SCRIPTS  -->
     <script src="assets/js/custom.js"></script>
 </body>
-
 </html>

@@ -9,7 +9,6 @@
             <a href='/' class="navbar-brand">
                 Library Management System
             </a>
-
         </div>
         <div class="navbar-collapse collapse ">
             <ul class="nav navbar-nav navbar-right">
@@ -35,7 +34,6 @@
                         <li role="presentation"><a role="menuitem" tabindex="-1" href="manage-books.php">Manage Books</a></li>
                     </ul>
                 </li>
-
                 <li>
                     <a href="#" class="dropdown-toggle" id="ddlmenuItem" data-toggle="dropdown"> Issue Books <i class="fa fa-angle-down"></i></a>
                     <ul class="dropdown-menu" role="menu" aria-labelledby="ddlmenuItem">
@@ -44,7 +42,6 @@
                     </ul>
                 </li>
                 <li><a href="reg-students.php">Reg Students</a></li>
-
                 <li><a href="change-password.php">Change Password</a></li>
             </ul>
         </div>

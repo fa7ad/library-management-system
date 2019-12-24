@@ -25,11 +25,9 @@ if (strlen($_SESSION['alogin']) == 0) {
     $error = "Your current password is wrong";
   }
 }
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
@@ -53,7 +51,6 @@ if (strlen($_SESSION['alogin']) == 0) {
       -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .1);
       box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .1);
     }
-
     .succWrap {
       padding: 10px;
       margin: 0 0 20px 0;
@@ -74,7 +71,6 @@ if (strlen($_SESSION['alogin']) == 0) {
     return true;
   }
 </script>
-
 <body>
   <!------MENU SECTION START-->
   <?php include('includes/header.php'); ?>
@@ -96,22 +92,18 @@ if (strlen($_SESSION['alogin']) == 0) {
             </div>
             <div class="panel-body">
               <form role="form" method="post" onSubmit="return valid();" name="chngpwd">
-
                 <div class="form-group">
                   <label>Current Password</label>
                   <input class="form-control" type="password" name="password" autocomplete="off" required />
                 </div>
-
                 <div class="form-group">
                   <label>Enter Password</label>
                   <input class="form-control" type="password" name="newpassword" autocomplete="off" required />
                 </div>
-
                 <div class="form-group">
                   <label>Confirm Password </label>
                   <input class="form-control" type="password" name="confirmpassword" autocomplete="off" required />
                 </div>
-
                 <button type="submit" name="change" class="btn btn-info">Chnage </button>
               </form>
             </div>
@@ -119,8 +111,6 @@ if (strlen($_SESSION['alogin']) == 0) {
         </div>
       </div>
       <!---LOGIN PABNEL END-->
-
-
     </div>
   </div>
   <!-- CONTENT-WRAPPER SECTION END-->
@@ -132,5 +122,4 @@ if (strlen($_SESSION['alogin']) == 0) {
   <!-- CUSTOM SCRIPTS  -->
   <script src="assets/js/custom.js"></script>
 </body>
-
 </html>

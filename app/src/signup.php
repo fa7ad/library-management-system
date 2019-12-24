@@ -33,10 +33,8 @@ if (isset($_POST['signup'])) {
     }
 }
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
@@ -79,18 +77,14 @@ if (isset($_POST['signup'])) {
             });
         }
     </script>
-
 </head>
-
 <body>
     <!------MENU SECTION START-->
     <?php include('includes/header.php'); ?>
     <!-- MENU SECTION END-->
     <div class="content-wrapper">
         <div class="container">
-
             <div class="row">
-
                 <div class="col-md-9 col-md-offset-1">
                     <div class="panel panel-danger pad-top">
                         <div class="panel-heading">
@@ -135,5 +129,4 @@ if (isset($_POST['signup'])) {
     <!-- CUSTOM SCRIPTS  -->
     <script src="assets/js/custom.js"></script>
 </body>
-
 </html>

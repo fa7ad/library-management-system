@@ -20,7 +20,6 @@ if (strlen($_SESSION['alogin']) == 0) {
 ?>
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
@@ -35,9 +34,7 @@ if (strlen($_SESSION['alogin']) == 0) {
     <link href="assets/css/style.css" rel="stylesheet" />
     <!-- GOOGLE FONT -->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
-
 </head>
-
 <body>
     <!------MENU SECTION START-->
     <?php include('includes/header.php'); ?>
@@ -47,9 +44,7 @@ if (strlen($_SESSION['alogin']) == 0) {
             <div class="row pad-botm">
                 <div class="col-md-12">
                     <h4 class="header-line">Edit category</h4>
-
                 </div>
-
             </div>
             <div class="row">
                 <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
@@ -57,7 +52,6 @@ if (strlen($_SESSION['alogin']) == 0) {
                         <div class="panel-heading">
                             Category Info
                         </div>
-
                         <div class="panel-body">
                             <form role="form" method="post">
                                 <?php
@@ -99,14 +93,11 @@ if (strlen($_SESSION['alogin']) == 0) {
                                                     </label>
                                                 </div <?php } ?> </div> <?php }
                                                                 } ?> <button type="submit" name="update" class="btn btn-info">Update </button>
-
                             </form>
                         </div>
                     </div>
                 </div>
-
             </div>
-
         </div>
     </div>
     <!-- CONTENT-WRAPPER SECTION END-->
@@ -120,5 +111,4 @@ if (strlen($_SESSION['alogin']) == 0) {
     <!-- CUSTOM SCRIPTS  -->
     <script src="assets/js/custom.js"></script>
 </body>
-
 </html>

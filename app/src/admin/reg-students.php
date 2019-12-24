@@ -5,7 +5,6 @@ include('includes/config.php');
 if (strlen($_SESSION['alogin']) == 0) {
     header('location:index.php');
 } else {
-
     // code for block student    
     if (isset($_GET['inid'])) {
         $id = $_GET['inid'];
@@ -17,7 +16,6 @@ if (strlen($_SESSION['alogin']) == 0) {
         $query->execute();
         header('location:reg-students.php');
     }
-
     //code for active students
     if (isset($_GET['id'])) {
         $id = $_GET['id'];
@@ -50,7 +48,6 @@ if (strlen($_SESSION['alogin']) == 0) {
     <link href="assets/css/style.css" rel="stylesheet" />
     <!-- GOOGLE FONT -->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
-
 </head>
 
 <body>
@@ -63,8 +60,6 @@ if (strlen($_SESSION['alogin']) == 0) {
                 <div class="col-md-12">
                     <h4 class="header-line">Manage Reg Students</h4>
                 </div>
-
-
             </div>
             <div class="row">
                 <div class="col-md-12">
@@ -106,8 +101,6 @@ if (strlen($_SESSION['alogin']) == 0) {
                                                     <td class="center"><?php if ($result->Status == 1) {
                                                                             echo htmlentities("Active");
                                                                         } else {
-
-
                                                                             echo htmlentities("Blocked");
                                                                         }
                                                                         ?></td>
@@ -115,10 +108,8 @@ if (strlen($_SESSION['alogin']) == 0) {
                                                         <?php if ($result->Status == 1) { ?>
                                                             <a href="reg-students.php?inid=<?php echo htmlentities($result->id); ?>" onclick="return confirm('Are you sure you want to block this student?');"" >  <button class=" btn btn-danger"> Inactive</button>
                                                             <?php } else { ?>
-
                                                                 <a href="reg-students.php?id=<?php echo htmlentities($result->id); ?>" onclick="return confirm('Are you sure you want to active this student?');""><button class=" btn btn-primary"> Active</button>
                                                                 <?php } ?>
-
                                                     </td>
                                                 </tr>
                                         <?php $cnt = $cnt + 1;
@@ -127,18 +118,13 @@ if (strlen($_SESSION['alogin']) == 0) {
                                     </tbody>
                                 </table>
                             </div>
-
                         </div>
                     </div>
                     <!--End Advanced Tables -->
                 </div>
             </div>
-
-
-
         </div>
     </div>
-
     <!-- CONTENT-WRAPPER SECTION END-->
     <?php include('includes/footer.php'); ?>
     <!-- FOOTER SECTION END-->

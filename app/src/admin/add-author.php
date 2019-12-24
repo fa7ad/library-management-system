@@ -20,10 +20,8 @@ if (strlen($_SESSION['alogin']) == 0) {
     }
 }
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
@@ -38,9 +36,7 @@ if (strlen($_SESSION['alogin']) == 0) {
     <link href="assets/css/style.css" rel="stylesheet" />
     <!-- GOOGLE FONT -->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
-
 </head>
-
 <body>
     <!------MENU SECTION START-->
     <?php include('includes/header.php'); ?>
@@ -64,16 +60,12 @@ if (strlen($_SESSION['alogin']) == 0) {
                                     <label>Author Name</label>
                                     <input class="form-control" type="text" name="author" autocomplete="off" required />
                                 </div>
-
                                 <button type="submit" name="create" class="btn btn-info">Add </button>
-
                             </form>
                         </div>
                     </div>
                 </div>
-
             </div>
-
         </div>
     </div>
     <!-- CONTENT-WRAPPER SECTION END-->
@@ -87,5 +79,4 @@ if (strlen($_SESSION['alogin']) == 0) {
     <!-- CUSTOM SCRIPTS  -->
     <script src="assets/js/custom.js"></script>
 </body>
-
 </html>

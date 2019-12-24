@@ -33,7 +33,6 @@ if (strlen($_SESSION['alogin']) == 0) {
   <link href="assets/css/style.css" rel="stylesheet" />
   <!-- GOOGLE FONT -->
   <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
-
 </head>
 
 <body>
@@ -74,8 +73,6 @@ if (strlen($_SESSION['alogin']) == 0) {
               </div>
             </div>
           <?php } ?>
-
-
           <?php if ($_SESSION['delmsg'] != "") { ?>
             <div class="col-md-6">
               <div class="alert alert-success">
@@ -85,10 +82,7 @@ if (strlen($_SESSION['alogin']) == 0) {
               </div>
             </div>
           <?php } ?>
-
         </div>
-
-
       </div>
       <div class="row">
         <div class="col-md-12">
@@ -104,7 +98,6 @@ if (strlen($_SESSION['alogin']) == 0) {
                     <tr>
                       <th>#</th>
                       <th>Author</th>
-
                       <th>Creation Date</th>
                       <th>Updation Date</th>
                       <th>Action</th>
@@ -124,7 +117,6 @@ if (strlen($_SESSION['alogin']) == 0) {
                           <td class="center"><?php echo htmlentities($result->creationDate); ?></td>
                           <td class="center"><?php echo htmlentities($result->UpdationDate); ?></td>
                           <td class="center">
-
                             <a href="edit-author.php?athrid=<?php echo htmlentities($result->id); ?>"><button class="btn btn-primary"><i class="fa fa-edit "></i> Edit</button>
                               <a href="manage-authors.php?del=<?php echo htmlentities($result->id); ?>" onclick="return confirm('Are you sure you want to delete?');"" >  <button class=" btn btn-danger"><i class="fa fa-pencil"></i> Delete</button>
                           </td>
@@ -135,18 +127,13 @@ if (strlen($_SESSION['alogin']) == 0) {
                   </tbody>
                 </table>
               </div>
-
             </div>
           </div>
           <!--End Advanced Tables -->
         </div>
       </div>
-
-
-
     </div>
   </div>
-
   <!-- CONTENT-WRAPPER SECTION END-->
   <?php include 'includes/footer.php'; ?>
   <!-- FOOTER SECTION END-->
